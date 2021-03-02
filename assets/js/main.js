@@ -16,3 +16,20 @@ if (condizione){
 } else {
   console.log("Mi dispiace la tua email non è nella lista");
 }
+
+
+// esercizio dadi
+// creazione variabili per il tiro randomico dei dadi
+var dadoMio = Math.floor(Math.random() * 6) + 1 ;
+var dadoComputer = Math.floor(Math.random() * 6) + 1 ;
+console.log("Il numero del tuo dado è: " + dadoMio);
+console.log("Il numero del dado del computer è: " + dadoComputer);
+
+// condizione per la gestione della vittoria
+if (dadoMio > dadoComputer) {
+  console.log("Complimenti hai battuto il computer");
+} else if(dadoMio < dadoComputer){
+  console.log("Mi dispiace questa volta hai perso");
+} else {
+  console.log("Wow è un pareggio");
+}
